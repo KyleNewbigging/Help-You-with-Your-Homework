@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Help you with your homework</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/input.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/JavaScript.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } });
+</script>
+
+<body>
+    <div class="topbackground">
+        <h1 class="heading">Help You With Your Homework</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact/Feedback</a></li>
+        </ul>
+    </div>
+    <p></p>
+    <h2>Volume of an Ellipsoid</h2>
+    $$ \huge V = \frac{4}{3} \pi abc $$
+    <div class='container'>
+        <form>
+            <div class='group'>
+                <input id="volume" type="text" required size="10" />
+                <span class='highlight'></span>
+                <span class="bar"></span>
+                <label>$ V $</label>
+            </div>
+
+            <div class='group'>
+                <input id="length" type="text" required size="10" />
+                <span class='highlight'></span>
+                <span class="bar"></span>
+                <label>$ a $</label>
+            </div>
+
+            <div class='group'>
+                <input id="width" type="text" required size="10" />
+                <span class='highlight'></span>
+                <span class="bar"></span>
+                <label>$ b $</label>
+            </div>
+
+            <div class='group'>
+                <input id="height" type="text" required size="10" />
+                <span class='highlight'></span>
+                <span class="bar"></span>
+                <label>$ c $</label>
+            </div>
+            <center>
+                <button class="hvr-underline-from-center" onclick="ellipsoidVol(); return false" />Submit
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>

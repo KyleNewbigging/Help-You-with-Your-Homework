@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Help you with your homework</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/JavaScript.js"></script>
+    <link href="css/input.css" type="text/css" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } });
+</script>
+
+<body>
+
+    <h1 class=heading>Help You With Your Homework</h1>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact/Feedback</a></li>
+    </ul>
+
+    <h1>Quadratic Function</h1>
+    <form>
+        $$ \huge x = \frac{-b\pm\sqrt {b^2 - 4ac}}{2a} $$
+        <div class="container">
+            <div class='group'>
+                <input id="firstNumber" type="text" required size="10" />
+                <span class='highlight'></span>
+                <span class="bar"></span>
+                <label>$ a $</label>
+            </div>
+            <div class='group'>
+                <input id="secondNumber" type="text" required size="10" />
+                <span class='highlight'></span>
+                <span class="bar"></span>
+                <label>$ b $</label>
+            </div>
+            <div class='group'>
+                <input id="thirdNumber" type="text" required size="10" />
+                <span class='highlight'></span>
+                <span class="bar"></span>
+                <label>$ c $</label>
+            </div>
+
+            </br>
+            <center>
+                <button class="hvr-underline-from-center" onclick="equation()">Submit</button>
+            </center>
+            </br><br/>
+            <a>Discriminant is: </a><input id="answer" type="text" size="5" readonly="readonly">
+            </br>
+            <a>Log: </a><input id="secondAnswer" type="text" size="20" readonly="readonly">
+            </input>
+            </br>
+
+            <a>Roots: </a><input id="thirdAnswer" type="text" readonly="readonly" size="20">
+            </br><br/>
+            <center>
+                <button class="hvr-underline-from-center" onclick="cancel()"> Clear </button>
+            </center>
+    </form>
+    </div>
+</body>
+
+</html>

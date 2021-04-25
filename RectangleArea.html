@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Help you with your homework</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/input.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/JavaScript.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</head>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>  
+    
+<body>
+    <center>
+        <div class="topbackground">
+                <h1 class="heading">Help You With Your Homework</h1>
+                <ul>
+                    <li><a  class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact/Feedback</a></li>
+                </ul>
+        </div>
+    <h2>Rectangle Area</h2>
+    $$ \huge A = hl $$
+    <div class='container'>
+            <form>
+                <div class='group'>
+                    <input id="area" type="text" required size="10" />
+                    <span class='highlight'></span>
+                    <span class="bar"></span>
+                    <label>$ A $</label>
+                </div>
+                <div class='group'>
+                    <input id="length" type="text" required size="10" />
+                    <span class='highlight'></span>
+                    <span class="bar"></span>
+                    <label>$ l $</label>
+                </div>
+                <div class='group'>
+                    <input id="height" type="text" required size="10" />
+                    <span class='highlight'></span>
+                    <span class="bar"></span>
+                    <label> $ h $ </label>
+                </div>
+                <button class="hvr-underline-from-center" onclick="squareArea(); return false" /> Submit
+            </form>
+        </div>
+    </center>
+</body>
+</html> 
